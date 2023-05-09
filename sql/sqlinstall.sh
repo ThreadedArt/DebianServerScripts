@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # updating packages
-apt update
+apt-get update -y && apt-get upgrade -y
 
 # Installing without prompt
-apt install mariadb-server -y
+apt-get install mariadb-server -y
 
 #  Start mariadb
 systemctl start mariadb
